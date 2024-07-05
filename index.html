@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="subcontener">
+            <form id="numer">
+                <input type="number" id="inputMin" min="0" 
+                placeholder="Minuty"/>
+                <span id="colonStyle" class="colon">:</span>
+                <input type="number" id="inputSek" min="0" 
+                max="60" maxlength="2" step="5" 
+                placeholder="Sekundy" value=""/>
+            </form>
+            <form>
+                <input type="button" id="startButton"
+                placeholder="start" value="Start"/>
+                <span class="colon">&nbsp;</span>
+                <input type="button" id="resetButton"
+                placeholder="reset" value="Reset"/>
+            </form>
+        </div>
+        <progress id="progressBar" max="0" value="0"
+        class="progress_styled"></progress>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

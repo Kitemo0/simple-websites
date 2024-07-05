@@ -1,0 +1,103 @@
+html, body{
+    min-height: 100%;
+}
+
+html{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+body{
+    background: #000023;
+    min-height: 100%;
+    width: 100%;
+    /*vefically aligns element*/
+    -webkit-align-self:center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.container{
+    width: 70%;
+    background: royalblue;
+    border-radius: 10px;
+    padding: 2rem;
+    /*horizatally aligns element */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 100px 3px royalblue;
+}
+.subcontainer{
+    width: 90%;
+    margin: 0 auto;
+}
+input[type="number"],
+#colonsStyle{
+    -webkit-transition: background ls, color ls, font-size ls;
+    transition: background ls, color ls,font-size ls;
+}
+input{
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+        /*gives equal widths to flex-cards */
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    /*makes all flex-cards have the same height */
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: atretch;
+            align-self: stretch;
+}
+form{
+        display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+.colon{
+    font-size: 4rem;
+    color:#FFF;
+    font-family: monospace;
+    -webkit-transition: text-shadow ls, dont-size ls,
+    color ls, background ls;
+    transition: text-shadow ls, font-size ls, 
+    color ls, background ls;
+}
+.form_active{
+    background: royalblue;
+    color: gold;
+    font-size: 6rem;
+    text-shadow: 0px 0px 4px 3px navy;
+}
+progress{
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+.progress_styled{
+    width: 100%;
+    line-height: 2;
+    height: 3rem;
+}
+progress::-webkit-progress-bar{
+    background: #000023;
+    border-radius: 0px 0px 10px 10px;
+    background: clear;
+    border: 5px solid blue;
+    box-shadow: inset 10px 10px 21px rgba(240,240,240,0.1);
+}
